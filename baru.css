@@ -1,0 +1,126 @@
+/* Untuk Hero Section */
+.typewriter h1 {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgb(49, 81, 30);
+    font-family: monospace;
+    animation: typing 4s steps(30, end) forwards, removeBorder 0s 4s forwards;
+
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes removeBorder {
+    to { border-color: transparent;}
+  }
+
+  @media (max-width: 768px) {
+    .gambar {
+        display: none; /* menyembunyikan gambar */
+    }
+}
+
+
+/* Untuk About me */
+.about-me {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    margin: 2rem 0; /* Margin atas dan bawah */
+}
+
+.about-title {
+    flex: 1; /* Kolom pertama untuk judul */
+}
+
+.about-content {
+    flex: 1; /* Kolom kedua untuk isi */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Mengubah menjadi kolom pada layar kecil */
+        align-items: center; /* Pusatkan konten pada perangkat kecil */
+    }
+
+    .about-title, .about-content {
+        width: 100%; /* Mengatur lebar menjadi 100% pada perangkat kecil */
+        padding: 0; /* Menghilangkan padding untuk responsivitas */
+    }
+}
+
+
+/* Project */
+.carousel-inner img {
+    max-width: 800px; /* Atur ukuran maksimum yang diinginkan */
+    max-height: 600px; /* Atur tinggi maksimum yang diinginkan */
+    width: auto;
+    height: auto;
+    margin: 0 auto; /* Memusatkan gambar */
+}
+
+.carousel-item img {
+    max-width: 800px; /* Atur ukuran maksimum yang diinginkan */
+    max-height: 600px; /* Atur tinggi maksimum yang diinginkan */
+    width: auto;
+    height: auto;
+    margin: 0 auto; /* Memusatkan gambar */
+}
+
+/* Button */
+.custom-btn {
+    background-color: rgb(133, 159, 61); /* warna background */
+    color: white; /* warna teks */
+    border: none; /* hapus border */
+  }
+  
+  .custom-btn:hover {
+    background-color:rgb(84, 111, 29); /* warna saat hover */
+  }
+  
+  /* Ukuran Carousel */
+
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    transition: none;
+  }
+  
+  .carousel-item img {
+    max-height: 300px; /* atur tinggi maksimal slide 1 di sini */
+    object-fit: contain; /* supaya gambar tetap proporsional */
+  }
+
+  .carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* transisi opacity yang halus */
+  }
+  
+  .carousel-item.active {
+    opacity: 1; /* slide aktif akan terlihat penuh */
+    transition: opacity 0.5s ease-in-out; /* transisi pada slide aktif */
+  }
+  
+  .custon-btn {
+    background-color:rgb(243, 244, 241);  /* warna background */
+    color: rgb(49, 81, 30); /* warna teks */
+    border: none; /* hapus border */
+  }
+  
+  .custon-btn:hover {
+    background-color:rgb(84, 111, 29); /* warna saat hover */
+  }
+
+  /* Efek Card */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
